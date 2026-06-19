@@ -5,7 +5,6 @@ import PopularCoursesSection from "../components/PopularCoursesSection";
 import WhyChooseUsSection from "../components/WhyChooseUsSection";
 import HowItWorksSection from "../components/HowItWorksSection";
 import AboutAccreditationsSection from "../components/AboutAccreditationsSection";
-import CourseButtonLink from "../components/CourseButtonLink";
 
 const Home = () => {
   return (
@@ -16,7 +15,6 @@ const Home = () => {
       <WhyChooseUsSection />
       <HowItWorksSection />
       <AboutAccreditationsSection />
-      <CourseButtonLink />
     </MainLayout>
   );
 };
