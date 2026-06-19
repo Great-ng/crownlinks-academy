@@ -6,32 +6,6 @@ import { courseCategories } from "../data/coursesData";
 const Footer = () => {
   return (
     <footer className="bg-[linear-gradient(180deg,#F7F8FC_0%,#FFFFFF_100%)]">
-      <section className="bg-[#2F5D7C] px-4 py-16 text-center text-white">
-        <div className="mx-auto max-w-4xl">
-          <h2 className="text-3xl font-extrabold leading-tight sm:text-4xl">
-            Ready to Start Your Learning
-            <br />
-            Journey?
-          </h2>
-
-          <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-blue-100 sm:text-base">
-            Join thousands of students and take the next step in your career today.
-          </p>
-
-          <Link
-            to="/courses"
-            className="mt-8 inline-flex items-center justify-center rounded-full bg-[var(--brand-orange)] px-7 py-4 text-[15px] font-semibold text-white shadow-sm transition hover:opacity-90"
-          >
-            Browse Courses Now
-          </Link>
-
-          <div className="mt-6 text-sm text-blue-100">
-            <span className="mr-2 text-[#F08A4B]">★</span>
-            Rated 4.8/5 by 2,500+ students
-          </div>
-        </div>
-      </section>
-
       <section className="px-4 py-10 sm:px-6 lg:px-8">
         <div className="mx-auto grid max-w-7xl gap-6 lg:grid-cols-[320px_1fr]">
           <aside className="rounded-[24px] bg-white p-6 shadow-[0_12px_40px_rgba(15,23,42,0.08)]">
