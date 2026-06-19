@@ -1,0 +1,21 @@
+import type { ReactNode } from "react";
+import Navbar from "../components/Navbar";
+import CTASection from "../components/CTASection";
+import Footer from "../components/Footer";
+
+interface MainLayoutProps {
+  children: ReactNode;
+}
+
+const MainLayout = ({ children }: MainLayoutProps) => {
+  return (
+    <div className="min-h-screen bg-(--brand-bg) text-(--brand-ink)">
+      <Navbar />
+      <main>{children}</main>
+      <CTASection />
+      <Footer />
+    </div>
+  );
+};
+
+export default MainLayout;

@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+:root {
+  --brand-navy: #1f3b67;
+  --brand-blue: #2b5de0;
+  --brand-blue-dark: #1f49c7;
+  --brand-orange: #f08a4b;
+  --brand-bg: #f7f8fc;
+  --brand-ink: #16233a;
+  --brand-muted: #667085;
+  --brand-line: #e7ebf3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--brand-bg);
+  color: var(--brand-ink);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+@keyframes drift-slow {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(20px, -18px, 0) scale(1.08);
+  }
+}
+
+@keyframes drift-reverse {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-18px, 16px, 0) scale(1.1);
+  }
+}
+
+@keyframes soft-pulse {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}
+
+.animate-drift-slow {
+  animation: drift-slow 12s ease-in-out infinite;
+}
+
+.animate-drift-reverse {
+  animation: drift-reverse 14s ease-in-out infinite;
+}
+
+.animate-soft-pulse {
+  animation: soft-pulse 8s ease-in-out infinite;
+}
