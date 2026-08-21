@@ -69,10 +69,15 @@ const Navbar = () => {
             <NavLink to="/about" className={linkClass} onClick={() => setOpen(false)}>
               About
             </NavLink>
-            <a href="#contact" className="rounded-2xl px-4 py-3 text-sm font-medium text-slate-700 hover:bg-slate-50" onClick={() => setOpen(false)}>
+            <NavLink to="/contact" className={linkClass} onClick={() => setOpen(false)}>
               Contact
-            </a>
-            <Button className="w-full bg-[var(--brand-orange)]">Get Started</Button>
+            </NavLink>
+            <NavLink
+              to="/courses"
+              className="inline-flex items-center justify-center rounded-full bg-[var(--brand-orange)] px-7 py-3 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand-orange)]"
+            >
+              Get Started
+            </NavLink>
           </div>
         </div>
       )}
