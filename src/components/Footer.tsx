@@ -63,8 +63,8 @@ const Footer = () => {
                 </h3>
                 <ul className="mt-6 space-y-4 text-sm text-slate-600">
                   <li><Link to="/courses" className="hover:text-[var(--brand-blue)]">All Courses</Link></li>
-                  <li><a href="#about" className="hover:text-[var(--brand-blue)]">About Us</a></li>
-                  <li><a href="#contact" className="hover:text-[var(--brand-blue)]">Contact</a></li>
+                  <li><Link to="/about" className="hover:text-[var(--brand-blue)]">About Us</Link></li>
+                  <li><Link to="/contact" className="hover:text-[var(--brand-blue)]">Contact</Link></li>
                 </ul>
               </div>
 
@@ -90,10 +90,10 @@ const Footer = () => {
                   Company
                 </h3>
                 <ul className="mt-6 space-y-4 text-sm text-slate-600">
-                  <li><a href="#about" className="hover:text-[var(--brand-blue)]">About Us</a></li>
-                  <li><a href="#contact" className="hover:text-[var(--brand-blue)]">FAQs</a></li>
-                  <li><a href="#contact" className="hover:text-[var(--brand-blue)]">Terms & Conditions</a></li>
-                  <li><a href="#contact" className="hover:text-[var(--brand-blue)]">Privacy Policy</a></li>
+                  <li><Link to="/about">About Us</Link></li>
+                  <li><Link to="/contact#faq">FAQs</Link></li>
+                  <li><Link to="/terms">Terms & Conditions</Link></li>
+                  <li><Link to="/privacy">Privacy Policy</Link></li>
                 </ul>
               </div>
 

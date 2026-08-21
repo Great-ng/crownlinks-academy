@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
-import Button from "../components/Button";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
@@ -41,11 +40,12 @@ const Navbar = () => {
 
         </nav>
 
-        <div className="hidden lg:block">
-          <Button className="bg-[var(--brand-orange)] px-5 py-2.5 text-sm shadow-sm">
-            Get Started
-          </Button>
-        </div>
+        <Link
+          to="/courses"
+          className="inline-flex items-center justify-center rounded-full bg-[var(--brand-orange)] px-7 py-3 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand-orange)]"
+        >
+          Get Started
+        </Link>
 
         <button
           type="button"
