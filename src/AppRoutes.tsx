@@ -5,6 +5,7 @@ import Courses from "./pages/Courses";
 import CourseDetails from "./pages/CourseDetails";
 import Enrollment from "./pages/Enrollment";
 import About from "./pages/About";
+import Contact from "./pages/Contact"; 
 
 const AppRoutes = () => {
   return (
@@ -15,6 +16,8 @@ const AppRoutes = () => {
         <Route path="/courses/:slug" element={<CourseDetails />} />
         <Route path="/enroll/:slug" element={<Enrollment />} />
          <Route path="/About" element={<About />} />
+         <Route path="/Contact" element={<Contact />} />
+
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>

@@ -35,9 +35,10 @@ const Navbar = () => {
           <NavLink to="/about" className={linkClass}>
             About
           </NavLink>
-          <a href="#contact" className="text-sm font-medium text-slate-700 transition hover:text-[var(--brand-blue)]">
+          <NavLink to="/contact" className={linkClass}>
             Contact
-          </a>
+          </NavLink>
+
         </nav>
 
         <div className="hidden lg:block">
