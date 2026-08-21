@@ -1,8 +1,7 @@
 import {
   HiOutlineEnvelope,
   HiOutlinePhone,
-  HiOutlineMapPin,
-  HiOutlineClock,
+  HiOutlineMapPin
 } from "react-icons/hi2";
 
 export const contactInfo = [
