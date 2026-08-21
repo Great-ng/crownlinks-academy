@@ -10,7 +10,7 @@ const contactItems = [
     id: 1,
     icon: HiOutlineEnvelope,
     title: "Email Address",
-    value: "info@crownlinksacademy.co.uk",
+    value: "Ade@crownlinksinternational.com",
     href: "mailto:info@crownlinksacademy.co.uk",
     bg: "bg-blue-50",
     color: "text-[var(--brand-blue)]",
